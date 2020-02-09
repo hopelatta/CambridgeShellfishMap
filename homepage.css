@@ -1,0 +1,70 @@
+/*
+
+Name: Hope Latta
+Student Number: 51419502
+Course: CSCI-12
+School: Harvard University
+Assignment: Final project
+Version: 1.0
+Purpose: this is the home page
+Notes: None.
+URL: Unknown.
+Known errors: none
+*/
+
+nav.sitenav ul {
+    list-style: none;
+}
+
+nav.sitenav li {
+    display: inline-block;
+    width: 8em;
+    text-align: center;
+}
+
+nav.sitenav a {
+    display: block;
+    font-weight: bold;
+}
+
+nav.sitenav a:link,
+nav.sitenav a:visited,
+nav.sitenav a:hover,
+nav.sitenav a:active {
+    color: green;
+    text-decoration: none;
+    border-bottom: thin solid transparent;
+}
+
+nav.sitenav a:hover {
+    border-bottom: thin solid green;
+}
+
+above {
+    border-bottom: thin solid green;
+}
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+h1 {
+    font-size: 500%;
+}
+
+h2 {
+    font-size: 200%;
+}
+p {
+    float: left;
+    font-size: 200%;
+}
+
+above {
+    border-bottom: thin solid green;
+}
+

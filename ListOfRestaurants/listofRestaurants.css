@@ -1,0 +1,141 @@
+/*
+
+Name: Hope Latta
+Student Number: 51419502
+Course: CSCI-12
+School: Harvard Unviersity
+Assignment: 4
+Version: 1.0
+Purpose: This exercise is for learning to use CSS
+Notes: CSS file for books.html
+Known errors: none
+
+
+*/
+
+nav.sitenav ul {
+    list-style: none;
+}
+
+nav.sitenav li {
+    display: inline-block;
+    width: 8em;
+    text-align: center;
+}
+
+nav.sitenav a {
+    display: block;
+    font-weight: bold;
+}
+
+nav.sitenav a:link,
+nav.sitenav a:visited,
+nav.sitenav a:hover,
+nav.sitenav a:active {
+    color: green;
+    text-decoration: none;
+    border-bottom: thin solid transparent;
+}
+
+nav.sitenav a:hover {
+    border-bottom: thin solid green;
+}
+
+h1 {
+    font-size: 500%;
+    color: black;
+}
+
+h2 {
+    font-size: 200%;
+    color: black;
+}
+p {
+    float: left;
+    font-size: 200%;
+}
+
+above {
+    border-bottom: thin solid green;
+}
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+div {
+    margin-top: 1em;
+}
+
+.location {
+    font-size: 80%;
+}
+
+.isbn {
+    font-size: 80%;
+}
+
+.phone {
+    font-variant: small-caps;
+}
+
+.restaurant {
+    font-style: italic;
+}
+
+.place {
+
+    border: 1px solid green;
+    border-width: 10px;
+    width: 700px;
+    padding: 100px;
+    margin: 20px;
+    background-color: white;
+}
+
+h3 {
+    color: blue;
+}
+
+/* Determining colours for links */
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+legend {
+    color: orange;
+}
+
+li {
+    list-style-type: none;
+}
+
+fieldset {
+    border-color: orange;
+}
+
+input[type=submit] {
+    border-color: orange;
+    font-size: 30px;
+}

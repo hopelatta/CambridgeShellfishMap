@@ -1,0 +1,126 @@
+<!--
+Name: Hope Latta
+Student Number: 51419502
+Course: CSCI-12
+School: Harvard Unviersity
+Assignment: final project
+Version: 3.0
+Purpose: This exercise is for learning to use page layout
+Notes: CSS file for maps.html
+Known errors: none
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Map of Cambridge</title>
+    <h1> Map of Cambridge </h1>
+    <nav class="sitenav">
+        <ul>
+            <li><a href="../index.html">Home Page</a></li>
+            <li class="youarehere"><a href="Map/map.html">Map</a></li>
+            <li><a href="../ListOfRestaurants/index.html">Restaurants</a></li>
+        </ul>
+    </nav>
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="map.css" />
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        
+        function initMap() {
+           var hourlyOyster = {lat: 42.373, lng: -71.1191};
+            
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: hourlyOyster,
+                zoom: 15
+            });
+            
+            var hourlyOystermarker = new google.maps.Marker({
+                position: hourlyOyster,
+                map: map,
+                title: 'Hourly Oyster'
+            });
+            
+            var spiciesmarker = new google.maps.Marker({
+                position: {lat: 42.372428, lng: -71.118458 },
+                map: map,
+                title: 'Spicies Thai'
+            });    
+            
+            var spiciesmarker = new google.maps.Marker({
+                position: {lat: 42.372428, lng: -71.118458 },
+                map: map,
+                title: 'Spicies Thai'
+            });
+            
+             var redhousemarker = new google.maps.Marker({
+                position: {lat: 42.372531, lng: -71.12126},
+                map: map,
+                title: 'Red House'
+            });
+            
+            var russelhousemarker = new google.maps.Marker({
+                position: {lat: 42.373332, lng: -71.119465},
+                map: map,
+                title: 'Russel House'
+            });
+            
+            var takemuramarker = new google.maps.Marker({
+                position: {lat: 42.372275, lng: -71.121382},
+                map: map,
+                title: 'Takemura'
+            });
+            
+            var daedalusmarker = new google.maps.Marker({
+                position: {lat: 42.371562, lng: -71.116494},
+                map: map,
+                title: 'Takemura'
+            });
+            
+               var boatmarker = new google.maps.Marker({
+                position: {lat: 42.371621, lng: -71.116714},
+                map: map,
+                title: 'Boathouse'
+            });
+            
+            var heightsmarker = new google.maps.Marker({
+                position: {lat:42.373161, lng: -71.118651},
+                map: map,
+                title: 'The Heights'
+            });
+            
+            var harvestmarker = new google.maps.Marker({
+                position: {lat: 42.373875, lng: -71.121938},
+                map: map,
+                title: 'Harvest'
+            });
+            
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTS_yioujAEFvQNzey1WBXkrH9_306tSY&callback=initMap" async defer></script>
+</body>
+
+</html>

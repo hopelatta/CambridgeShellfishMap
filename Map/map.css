@@ -1,0 +1,51 @@
+/* CSS for map */
+
+html,body,#map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav.sitenav ul {
+    list-style: none;
+}
+
+nav.sitenav li {
+    display: inline-block;
+    width: 8em;
+    text-align: center;
+}
+
+nav.sitenav a {
+    display: block;
+    font-weight: bold;
+}
+
+nav.sitenav a:link,
+nav.sitenav a:visited,
+nav.sitenav a:hover,
+nav.sitenav a:active {
+    color: green;
+    text-decoration: none;
+    border-bottom: thin solid transparent;
+}
+
+nav.sitenav a:hover {
+    border-bottom: thin solid green;
+}
+
+h1 {
+    font-size: 500%;
+}
+
+h2 {
+    font-size: 200%;
+}
+p {
+    float: left;
+    font-size: 200%;
+}
+
+above {
+    border-bottom: thin solid green;
+}
